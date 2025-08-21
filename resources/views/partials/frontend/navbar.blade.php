@@ -2,7 +2,7 @@
     <!-- Section Profil -->
     <div class="p-6 text-center border-b border-gray-700">
         <div class="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden border-2 border-cyan-500">
-            <img src="" alt="Gary Axen" class="w-full h-full object-cover">
+            <img src="{{ asset($about->avatar->image)}}" alt="Gary Axen" class="w-full h-full object-cover">
         </div>
         <h2 class="text-xl font-semibold mb-4">Gary Axen</h2>
         

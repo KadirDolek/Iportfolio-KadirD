@@ -7,7 +7,11 @@
 <section >
 
          @include('frontend.about')
+       
+</section>
+<section >
 
+       
 </section>
 
 @endsection
