@@ -4,8 +4,13 @@
 
 @section('content')
 
+<section>
+
+         @include('frontend.layout')
+
+</section>
 <section class="px-100 py-40">
 
-         <h1>HomeFront</h1>
+         <h2>About</h2>
 
 </section>

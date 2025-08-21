@@ -1,4 +1,4 @@
-@extends('frontend.layout')
+@extends('backend.layout')
 
 @section('title', 'Home')
 
@@ -6,6 +6,6 @@
 
 <section class="px-100 py-40">
 
-         <h1>HomeFront</h1>
+         <h2>Home</h2>
 
 </section>
