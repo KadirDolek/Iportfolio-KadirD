@@ -1,4 +1,4 @@
-<nav class="fixed left-0 top-0 h-screen w-64 bg-gray-900 text-white flex flex-col">
+ <nav class="fixed left-0 top-0 h-screen w-64 bg-gray-900 text-white flex flex-col">
     <!-- Section Profil -->
     <div class="p-6 text-center border-b border-gray-700">
         <div class="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden border-2 border-cyan-500">
@@ -36,7 +36,7 @@
                 </a>
             </li>
             <li>
-                <a href="/about" class="flex items-center px-6 py-3 text-gray-300 hover:bg-blue-800 hover:text-white transition-colors">
+                <a id="about" href="/about" class="flex items-center px-6 py-3 text-gray-300 hover:bg-blue-800 hover:text-white transition-colors">
                     <i class="w-5 h-5 mr-3 fas fa-user"></i>
                     <span>About</span>
                 </a>

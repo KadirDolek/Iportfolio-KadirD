@@ -9,10 +9,12 @@ use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\SkillController;
 use App\Http\Controllers\TestimonialsController;
 use Illuminate\Support\Facades\Route;
+use App\Models\About;
 
 
 Route::get('/', function () {
-    return view('welcome');
+    $about=About::first();
+    return view('welcome',compact('about'));
 });
 
 // FRONT END

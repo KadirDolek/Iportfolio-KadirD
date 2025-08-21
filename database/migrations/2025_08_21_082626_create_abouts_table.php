@@ -22,7 +22,7 @@ return new class extends Migration
             $table->string('degree');
             $table->string('email')->unique();
             $table->string('freelance');
-            $table->string('subtext');
+            $table->tinyText('subtext');
             $table->timestamps();
         });
     }
