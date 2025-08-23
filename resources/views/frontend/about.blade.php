@@ -1,11 +1,6 @@
-@extends('frontend.layout')
-
-@section('title', 'Home')
-
-@section('content')
 
 
-    <section class="bg-white ps-142 py-16 pe-54 px-8">
+    <section id="about" class="bg-white ps-142 py-16 pe-54 px-8">
         <h2 class="text-blue-700 hover:text-blue-900 text-3xl font-bold mb-2">About</h2>
         <div class="border-t w-18 border-2 mb-4 text-blue-800"></div>
         <span class="text-gray-800 block mb-8 text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
@@ -57,7 +52,7 @@
         </div>
     </section>
 
-    <section class="bg-cyan-50 ps-142 pe-54 py-16 px-8 h-[500px]">
+    <section class="bg-gray-50 ps-142 pe-54 py-16 px-8 h-[500px]">
         <h2 class="text-blue-700 hover:text-blue-900 text-3xl font-bold mb-2">Skills</h2>
         <div class="border-t w-13 border-2 mb-4 text-blue-800"></div>
         <span class="text-gray-800 block mb-8 text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
@@ -77,5 +72,3 @@
                 @endforeach
             </div>
     </section>
-
-@endsection

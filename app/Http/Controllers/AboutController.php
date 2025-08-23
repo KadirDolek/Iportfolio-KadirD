@@ -15,4 +15,22 @@ class AboutController extends Controller
         $skills = Skill::all();
         return view('frontend.about', compact('about','skills'));
     }
+    public function indexskill(){
+        $skills = Skill::all();
+        return view('backend.skill', compact('skills'));
+    }
+    public function create(){
+         return view('create');        
+    }
+    public function store(Request $request){
+
+        $skills = new Skill(); 
+        $skills->skill = $request->skill;
+        $skills->pourcentage = $request->pourcentage;
+
+
+        $skills->save(); 
+        $skills = Skill::all();
+        return view('backend.skill', compact('skills'));
+    }
 }

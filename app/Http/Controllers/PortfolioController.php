@@ -2,13 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Portfolio;
 use Illuminate\Http\Request;
+
 
 class PortfolioController extends Controller
 
     {
     public function index(){
-        return view('frontend.portfolio');
+        $portfolio=Portfolio::all();
+        return view('frontend.portfolio', compact('portfolio'));    
+    }
     
-}
 }

@@ -12,7 +12,7 @@
     @include('partials.backend.navbar')
     <main >
         {{-- ici toutes les pages nommés 'content' --}}
-        {{-- @yield  --}}
+        @yield ('content')
     </main>
     {{-- Ici le footer  --}}
     

@@ -23,27 +23,9 @@
                 </a>
             </li>
             <li>
-                <a href="/about" class="flex items-center  py-3 text-gray-300 hover:bg-blue-800 hover:text-white transition-colors">
-                    <i class="w-5 h-5 mr-3 fas fa-user"></i>
-                    <span>About</span>
-                </a>
-            </li>
-            <li>
-                <a href="/portfolio" class="flex items-center  py-3 text-gray-300 hover:bg-blue-800 hover:text-white transition-colors">
-                    <i class="w-5 h-5 mr-3 fas fa-briefcase"></i>
-                    <span>Portfolio</span>
-                </a>
-            </li>
-            <li>
                 <a href="/skill" class="flex items-center py-3 text-gray-300 hover:bg-blue-800 hover:text-white transition-colors">
                     <i class="w-5 h-5 mr-3 fas fa-briefcase"></i>
                     <span>Skill</span>
-                </a>
-            </li>
-            <li>
-                <a href="/services" class="flex items-center py-3 text-gray-300 hover:bg-blue-800 hover:text-white transition-colors">
-                    <i class="w-5 h-5 mr-3 fas fa-cog"></i>
-                    <span>Services</span>
                 </a>
             </li>
             <li>
@@ -53,13 +35,7 @@
                 </a>
             </li>
             <li>
-                <a href="/contact" class="flex items-center py-3 text-gray-300 hover:bg-blue-800 hover:text-white transition-colors">
-                    <i class="w-5 h-5 mr-3 fas fa-envelope"></i>
-                    <span>Contact</span>
-                </a>
-            </li>
-            <li>
-                <a href="/contact" class="flex items-center py-3 text-gray-300 hover:bg-blue-800 hover:text-white transition-colors">
+                <a href="/mailbox" class="flex items-center py-3 text-gray-300 hover:bg-blue-800 hover:text-white transition-colors">
                     <i class="w-5 h-5 mr-3 fas fa-envelope"></i>
                     <span>Mailbox</span>
                 </a>

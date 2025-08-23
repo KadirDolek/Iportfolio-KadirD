@@ -17,8 +17,8 @@ class SkillSeeder extends Seeder
         Skill::insert([
             ['skill' => 'Java',
             'pourcentage' => 80],
-            ['skill' => 'C',
-            'pourcentage' => 30],
+            ['skill' => 'La bagarre',
+            'pourcentage' => 100],
             ['skill' => 'Javascript',
             'pourcentage' => 40],
             ['skill' => 'Tailwind',

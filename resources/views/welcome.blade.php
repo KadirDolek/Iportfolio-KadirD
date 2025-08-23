@@ -7,6 +7,10 @@
 <section >
 
          @include('frontend.about')
+         @include('frontend.portfolio')
+         @include('frontend.services')
+         @include('frontend.contact')
+
        
 </section>
 <section >
