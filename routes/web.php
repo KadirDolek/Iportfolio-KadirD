@@ -40,6 +40,8 @@ Route::get('/homeback', [HomebackController::class, 'index']);
 
 
 Route::get('/mailbox', [MailboxController::class, 'index']);
+Route::post('/storemail',[MailboxController::class, 'store'])->name('storemail');
+Route::delete('/remove_mail/{id}',[MailboxController::class, 'destroy'])->name('remove_mail');
 
 
 Route::get('/testimonials', [TestimonialsController::class, 'index']);
