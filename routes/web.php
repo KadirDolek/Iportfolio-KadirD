@@ -38,6 +38,8 @@ Route::get('/services', [ServiceController::class, 'index']);
 // BACK END
 
 Route::get('/homeback', [HomebackController::class, 'index']);
+// Route::get('/edit_profil/{id}',[HomebackController::class, 'edit'])->name('edit_profil');
+Route::put('/update_profil/{id}',[HomebackController::class, 'update'])->name('update_profil');
 
 
 Route::get('/mailbox', [MailboxController::class, 'index']);
