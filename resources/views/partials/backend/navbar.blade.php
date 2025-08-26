@@ -35,6 +35,12 @@
                 </a>
             </li>
             <li>
+                <a href="/portfolioback" class="flex items-center py-3 text-gray-300 hover:bg-blue-800 hover:text-white transition-colors">
+                    <i class="w-5 h-5 mr-3 fas fa-cog"></i>
+                    <span>Portfolios</span>
+                </a>
+            </li>
+            <li>
                 <a href="/mailbox" class="flex items-center py-3 text-gray-300 hover:bg-blue-800 hover:text-white transition-colors">
                     <i class="w-5 h-5 mr-3 fas fa-envelope"></i>
                     <span>Mailbox</span>

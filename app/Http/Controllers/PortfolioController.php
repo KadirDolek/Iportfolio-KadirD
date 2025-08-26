@@ -13,5 +13,31 @@ class PortfolioController extends Controller
         $portfolio=Portfolio::all();
         return view('frontend.portfolio', compact('portfolio'));    
     }
+    public function indexback(){
+        $portfolio=Portfolio::all();
+        return view('backend.portfolio', compact('portfolio'));    
+    }
+
+    public function create(){
+        return view('create');
+    }
+
+    public function store(Request $request){
+        $path = $request->file('image')->store('portfolio-assets','public');
+        Portfolio::create([
+            'image' => 'storage/'.$path,
+            'filter' => $request->filter
+        ]);
+        $portfolio = Portfolio::all();
+    return view('backend.portfolio', compact('portfolio'));
+    }
+
+    public function destroy($id){
+        $portfolio = Portfolio::where("id", $id);
+        $portfolio->delete();
+
+        $portfolio = Portfolio::all(); 
+        return view('backend.portfolio', compact('portfolio'));
+    }
     
 }

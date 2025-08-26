@@ -1,7 +1,7 @@
  <nav class="fixed left-0 top-0 h-screen w-64 bg-gray-900 text-white flex flex-col">
     <!-- Section Profil -->
     <div class="p-6 text-center border-b border-gray-700">
-        <div class="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden border-2 border-cyan-500">
+        <div class="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden border-2 border-green-500">
             <img src="{{ asset($about->avatar->image)}}" alt="Gary Axen" class="w-full h-full object-cover">
         </div>
         <h2 class="text-xl font-semibold mb-4">Gary Axen</h2>

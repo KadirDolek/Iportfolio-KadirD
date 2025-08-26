@@ -32,6 +32,7 @@ Route::get('/contact', [ContactController::class, 'index']);
 Route::get('/portfolio', [PortfolioController::class, 'index']);
 
 
+
 Route::get('/services', [ServiceController::class, 'index']);
 
 // BACK END
@@ -49,3 +50,7 @@ Route::get('/testimonials', [TestimonialsController::class, 'index']);
 
 Route::get('/skill', [AboutController::class, 'indexskill']);
 Route::post('/create',[AboutController::class, 'store'])->name('storeskill');
+
+Route::get('portfolioback',[PortfolioController::class, 'indexback']);
+Route::post('/create',[PortfolioController::class, 'store'])->name('storephoto');
+Route::delete('/remove_photos/{id}',[PortfolioController::class, 'destroy'])->name('remove_photos');
