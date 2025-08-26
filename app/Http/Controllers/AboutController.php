@@ -33,4 +33,11 @@ class AboutController extends Controller
         $skills = Skill::all();
         return view('backend.skill', compact('skills'));
     }
+    public function destroy($id){
+        $skills = Skill::where("id", $id);
+        $skills->delete();
+
+        $skills = Skill::all(); 
+        return view('backend.skill', compact('skills'));
+    }
 }

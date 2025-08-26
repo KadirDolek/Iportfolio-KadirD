@@ -68,6 +68,11 @@
                             </div>
                             <progress value="{{ $skill->pourcentage }}" max="100" class="w-112 h-3 rounded-lg overflow-hidden "></progress>
                         </span>
+                        <form action="{{ route('remove_skill', $skill->id) }}" method="POST">
+                            @csrf
+                            @method('DELETE') 
+                            <input class="border-2 border-red-500 bg-amber-50 rounded-xl px-3" type="submit" value="Supprimer">
+                        </form>
                     </div>
                 @endforeach
             </div>

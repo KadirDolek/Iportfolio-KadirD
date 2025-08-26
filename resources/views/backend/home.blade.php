@@ -8,11 +8,14 @@
             temporibus quaerat quod odio facilis voluptatum quibusdam molestias cupiditate iure architecto soluta
             consectetur impedit repellendus veritatis laboriosam.</span>
 
-        <form id="addEmployeForm" action="{{ route('update_profil', $about->id) }}" method="POST">
+        <form id="addEmployeForm" action="{{ route('update_profil', $about->id) }}" method="POST" enctype="multipart/form-data">
             @csrf
           @method("PUT")
             <div>
                 <img src="{{ asset($about->avatar->image)}}" class="h-74 w-auto rounded shadow" alt="">
+                <label for="image" class="block text-sm font-medium text-gray-700 mb-2">Profil</label>
+                <input type="file" id="image" name="avatar" accept="image/*"
+            class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 group-hover:border-gray-300 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-medium file:bg-blue-50 file:text-red-400 hover:file:bg-blue-100">
             </div>
             <div class="flex-1">
                 <div>

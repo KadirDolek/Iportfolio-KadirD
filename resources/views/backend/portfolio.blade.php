@@ -2,7 +2,7 @@
 @section('content')
 
 
-<section class="px-100 py-40">
+<section class="px-100 py-40 ">
     <h2 class="text-2xl font-semibold">
         Ajouter une photo au portfolio :
     </h2>
@@ -40,14 +40,14 @@
             <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem earum velit tempore vitae ad eveniet eius quas quos saepe, culpa nulla voluptatem vero, beatae excepturi. Dolor fugit aut, repellendus ab similique voluptatibus voluptas numquam a pariatur adipisci. Id, quis rerum.</span>
           </div>
 
-            <div class="bg-transparent w-auto h-auto flex flex-wrap gap-x-12 gap-y-10">
+            <div class="bg-transparent w-auto h-auto flex flex-wrap gap-x-10 gap-y-10">
                 @foreach ($portfolio as $photo )
                     <img class="w-82" src="{{ $photo->image }}" alt="">
-                    <form action="{{ route('remove_photos', $photo->id) }}" method="POST">
-                        @csrf
-                        @method('DELETE') 
-                        <input type="submit" value="Supprimer">
-                    </form>
+                <form action="{{ route('remove_photos', $photo->id) }}" method="POST">
+                    @csrf
+                    @method('DELETE') 
+                    <input class="border-2 border-red-500 bg-amber-50 rounded-xl px-3" type="submit" value="Supprimer">
+                </form>
                 @endforeach
             </div>
             

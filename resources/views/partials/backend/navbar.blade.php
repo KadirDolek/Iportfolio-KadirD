@@ -2,7 +2,7 @@
     <!-- Section Profil -->
     <div class="p-6 text-center border-b border-gray-700">
         <div class="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden border-2 border-cyan-500">
-            <img src="" alt="Gary Axen" class="w-full h-full object-cover">
+            {{-- <img src="{{ asset($about->avatar->image)}}" alt="Gary Axen" class="w-full h-full object-cover"> --}}
         </div>
         <h2 class="text-xl font-semibold mb-4">Gary Axen</h2>
         <h4 class="text-center opacity-50">ADMIN</h4>
@@ -20,6 +20,12 @@
                 <a href="/homeback" class="flex items-center py-3 text-gray-300 hover:bg-blue-800 hover:text-white transition-colors">
                     <i class="w-5 h-5 mr-3 fas fa-home"></i>
                     <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="/backservices" class="flex items-center py-3 text-gray-300 hover:bg-blue-800 hover:text-white transition-colors">
+                    <i class="w-5 h-5 mr-3 fas fa-home"></i>
+                    <span>Services</span>
                 </a>
             </li>
             <li>
