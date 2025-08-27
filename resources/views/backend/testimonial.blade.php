@@ -29,13 +29,13 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                 <div>
                     <label for="name" class="block text-sm font-semibold text-gray-700 mb-3">Nom du client</label>
-                    <input id="name" type="text" name="name" placeholder="Ex: Jean Dupont" required
+                    <input id="name" type="text" name="name"  required
                            class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-gray-50 hover:bg-white">
                 </div>
 
                 <div>
                     <label for="positions" class="block text-sm font-semibold text-gray-700 mb-3">Poste/Fonction</label>
-                    <input id="positions" type="text" name="positions" placeholder="Ex: CEO, Designer..." required
+                    <input id="positions" type="text" name="positions" required
                            class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-gray-50 hover:bg-white">
                 </div>
             </div>

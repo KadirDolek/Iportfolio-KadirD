@@ -21,7 +21,7 @@ class TestimonialsController extends Controller
         
 
         
-        $path = $request->file('img')->store('testimonial-assets', 'public');
+        $path = $request->file('image')->store('testimonial-assets', 'public');
 
         
         Testimonials::create([
@@ -50,9 +50,9 @@ class TestimonialsController extends Controller
         ];
 
 
-        if ($request->hasFile('img')) {
-            $path = $request->file('img')->store('testimonial-assets', 'public');
-            $data['img'] = 'storage/' . $path;
+        if ($request->hasFile('image')) {
+            $path = $request->file('image')->store('testimonial-assets', 'public');
+            $data['image'] = 'storage/' . $path;
         }
 
         $testimonials->update($data);
